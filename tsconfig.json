@@ -1,0 +1,12 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "module": "commonjs",
+    "target": "ES2015",
+    "sourceMap": true,
+    "listEmittedFiles": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --color .",
-    "build": "tsc -p ./src",
+    "build": "tsc -b",
     "start": "node dist/index.js"
   },
   "repository": {
@@ -20,7 +19,6 @@
   },
   "homepage": "https://github.com/miroslawmajka/typescript-sandbox#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.7"
   }
 }
