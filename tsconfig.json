@@ -1,12 +1,16 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
+    "rootDir": "src",
     "outDir": "dist",
-    "sourceRoot": "src",
     "module": "commonjs",
+    "moduleResolution": "node",
     "target": "ES2015",
     "sourceMap": true,
-    "listEmittedFiles": true
+    "listEmittedFiles": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  "exclude": ["node_modules", "**/node_modules/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.js", "**/*.test.js"]
 }
