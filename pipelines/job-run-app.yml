@@ -9,7 +9,7 @@ jobs:
     displayName: Restore production npm modules
     workingDirectory: $(NODE_CODE_PATH)
   
-  - script: npm start
+  - script: npm run start-dist
     displayName: Run application
     workingDirectory: $(NODE_CODE_PATH)
     

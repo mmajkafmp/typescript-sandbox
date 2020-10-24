@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "start-dist": "node dist/index.js",
     "start": "ts-node src/index.ts",
     "test": "jest"
   },
