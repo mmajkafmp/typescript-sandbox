@@ -6,7 +6,11 @@ jobs:
   - template: step-install-node.yml
   
   - script: npm install --production
-    displayName: Restore production npm modules
+    displayName: Restore production dependencies
+    workingDirectory: $(NODE_CODE_PATH)
+  
+  - script: npm run build
+    displayName: Build TypeScript
     workingDirectory: $(NODE_CODE_PATH)
   
   - script: npm run start-dist

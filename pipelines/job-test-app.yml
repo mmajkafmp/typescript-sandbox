@@ -12,7 +12,7 @@ jobs:
   - template: step-install-node.yml
   
   - script: npm install
-    displayName: Restore npm modules
+    displayName: Restore all dependencies
     workingDirectory: $(NODE_CODE_PATH)
   
   - script: npm test
