@@ -1,0 +1,22 @@
+trigger: 
+  - master
+
+name: $(SourceBranchName)-$(BuildID)-$(Rev:r)-$(Date:yyyy-MM-dd)
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- name: NODE_CODE_PATH
+  value: $(Build.SourcesDirectory)/src
+
+stages:
+- stage: TestApp
+  displayName: Test App
+  jobs:
+  - template: job-test-app.yml
+
+- stage: RunApp
+  displayName: Run App
+  jobs:
+  - template: job-run-app.yml

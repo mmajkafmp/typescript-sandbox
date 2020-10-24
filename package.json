@@ -5,11 +5,13 @@
   "author": "Miroslaw Majka",
   "license": "MIT",
   "keywords": [
-    "typescript"
+    "typescript",
+    "jest"
   ],
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,10 @@
   },
   "homepage": "https://github.com/miroslawmajka/typescript-sandbox#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.1",
+    "jest-junit": "^12.0.0",
+    "ts-jest": "^26.4.2",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   }
