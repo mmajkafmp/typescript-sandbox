@@ -2,7 +2,7 @@
 
 [![Build Status](https://dev.azure.com/miroslawmajka/typescript-sandbox/_apis/build/status/miroslawmajka.typescript-sandbox?branchName=master)](https://dev.azure.com/miroslawmajka/typescript-sandbox/_build/latest?definitionId=5&branchName=master)
 
-Just plyaing about with TypeScript and see where I end up.
+Just playing about with TypeScript and see where I end up.
 
 Install dependencies with `npm install`.
 
