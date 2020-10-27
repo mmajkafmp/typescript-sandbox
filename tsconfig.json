@@ -4,7 +4,7 @@
     "outDir": "dist",
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "ES2015",
+    "target": "ES5",
     "sourceMap": true,
     "listEmittedFiles": true,
     "strict": true,
