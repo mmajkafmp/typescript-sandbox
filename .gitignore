@@ -105,3 +105,6 @@ dist
 
 # JUnit
 junit.xml
+
+# Logs
+logs.txt
