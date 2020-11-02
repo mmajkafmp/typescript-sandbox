@@ -1,13 +1,13 @@
 abstract class Vehicle {
-  abstract getVehicleType(): string;
+  abstract get vehicleType(): string;
 
   drive(): void {
-    console.log('Driving');
+    console.log(`Driving ${this.vehicleType}`);
   }
 }
 
 class Car extends Vehicle {
-  getVehicleType(): string {
+  get vehicleType(): string {
     return 'Car';
   }
 }

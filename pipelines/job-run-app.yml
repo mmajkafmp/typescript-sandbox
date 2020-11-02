@@ -1,0 +1,19 @@
+jobs:
+- job: RunAppMain
+  displayName: Run App Main
+
+  steps:
+  - template: step-install-node.yml
+  
+  - script: npm install --production
+    displayName: Restore production dependencies
+    workingDirectory: $(NODE_CODE_PATH)
+  
+  - script: npm run build
+    displayName: Build TypeScript
+    workingDirectory: $(NODE_CODE_PATH)
+  
+  - script: npm run start-dist
+    displayName: Run application
+    workingDirectory: $(NODE_CODE_PATH)
+    

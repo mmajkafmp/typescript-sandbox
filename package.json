@@ -1,24 +1,33 @@
 {
   "name": "typescript-sandbox",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TypeScript Sandbox",
+  "author": "Miroslaw Majka",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "jest"
+  ],
   "scripts": {
-    "build": "tsc -b",
-    "start": "node dist/index.js"
+    "build": "tsc",
+    "start-dist": "node dist/index.js",
+    "start": "ts-node src/index.ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miroslawmajka/typescript-sandbox.git"
   },
-  "keywords": [],
-  "author": "Miroslaw Majka",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/miroslawmajka/typescript-sandbox/issues"
   },
   "homepage": "https://github.com/miroslawmajka/typescript-sandbox#readme",
   "devDependencies": {
-    "typescript": "^3.9.7"
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.1",
+    "jest-junit": "^12.0.0",
+    "ts-jest": "^26.4.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   }
 }
