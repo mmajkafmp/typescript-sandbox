@@ -7,8 +7,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- name: NODE_CODE_PATH
-  value: $(Build.SourcesDirectory)/src
+- name: WORK_DIR_PATH
+  value: $(Build.SourcesDirectory)
 
 stages:
 - stage: TestApp

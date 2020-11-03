@@ -9,10 +9,10 @@
     "jest"
   ],
   "scripts": {
-    "build": "tsc",
-    "start-dist": "node dist/index.js",
+    "test": "jest",
     "start": "ts-node src/index.ts",
-    "test": "jest"
+    "build": "tsc",
+    "dist": "node dist/index.js"
   },
   "repository": {
     "type": "git",

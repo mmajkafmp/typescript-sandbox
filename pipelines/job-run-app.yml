@@ -5,15 +5,13 @@ jobs:
   steps:
   - template: step-install-node.yml
   
-  - script: npm install --production
-    displayName: Restore production dependencies
-    workingDirectory: $(NODE_CODE_PATH)
+  - template: step-install-dependencies.yml
   
   - script: npm run build
     displayName: Build TypeScript
-    workingDirectory: $(NODE_CODE_PATH)
+    workingDirectory: $(WORK_DIR_PATH)
   
-  - script: npm run start-dist
+  - script: npm run dist
     displayName: Run application
-    workingDirectory: $(NODE_CODE_PATH)
+    workingDirectory: $(WORK_DIR_PATH)
     
