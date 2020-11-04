@@ -1,8 +1,11 @@
 import { Car } from './vehicle-service/vehicles';
 import { TodoService } from './todo-service/todo-service';
 import { run as runStrategy } from './design-patterns/strategy/index';
+import { run as runComposite } from './design-patterns/composite/index';
 
 runStrategy();
+
+runComposite();
 
 // const car = new Car();
 
