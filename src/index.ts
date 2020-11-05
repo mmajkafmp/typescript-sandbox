@@ -1,11 +1,14 @@
 import { Car } from './vehicle-service/vehicles';
 import { TodoService } from './todo-service/todo-service';
-import { run as runStrategy } from './design-patterns/strategy/index';
-import { run as runComposite } from './design-patterns/composite/index';
+import { run as runStrategy } from './design-patterns/behavioral-strategy/index';
+import { run as runComposite } from './design-patterns/structural-composite/index';
+import { run as runDecorator } from './design-patterns/structural-decorator';
 
-runStrategy();
+// runStrategy();
 
-runComposite();
+// runComposite();
+
+runDecorator();
 
 // const car = new Car();
 
