@@ -2,6 +2,8 @@ import { CatalogItem } from './catalog-item';
 import { CatalogGroup } from './catalog-group';
 
 export const run = () => {
+  console.log('\nDESIGN PATTERN - STRUCTURAL - COMPOSITE\n');
+
   const boots = new CatalogItem('Leather Boots', 79.99);
   const sneakers = new CatalogItem('Kicks', 39.99);
   const flipFlops = new CatalogItem('Flip Flops', 19.99);
