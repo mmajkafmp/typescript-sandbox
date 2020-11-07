@@ -1,6 +1,6 @@
-import { ICatalogable } from './icatalogable';
+import ICatalogable from './icatalogable';
 
-export class CatalogItem implements ICatalogable {
+export default class CatalogItem implements ICatalogable {
   name: string;
   price: number;
 

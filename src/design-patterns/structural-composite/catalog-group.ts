@@ -1,6 +1,6 @@
-import { ICatalogable } from './icatalogable';
+import ICatalogable from './icatalogable';
 
-export class CatalogGroup implements ICatalogable {
+export default class CatalogGroup implements ICatalogable {
   name: string;
   composites: ICatalogable[];
 

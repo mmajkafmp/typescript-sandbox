@@ -1,6 +1,6 @@
-import { Item } from './item';
+import Item from './item';
 
-export class Shopper {
+export default class Shopper {
   items: Item[];
 
   constructor(private name: string, private account: number = 0) {

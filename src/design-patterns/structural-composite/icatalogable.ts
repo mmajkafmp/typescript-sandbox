@@ -1,4 +1,4 @@
-export interface ICatalogable {
+export default interface ICatalogable {
   total: number;
   print(): void;
 }

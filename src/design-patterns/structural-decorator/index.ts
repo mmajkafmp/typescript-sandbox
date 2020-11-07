@@ -1,4 +1,4 @@
-import { Shopper } from './shopper';
+import Shopper from './shopper';
 import {
   InventoryItem,
   GoldInventoryItem,
