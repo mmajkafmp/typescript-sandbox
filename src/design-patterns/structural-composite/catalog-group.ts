@@ -1,17 +1,17 @@
-import ICatalogable from './icatalogable';
+import Catalogable from './catalogable';
 
-export default class CatalogGroup implements ICatalogable {
+export default class CatalogGroup implements Catalogable {
   name: string;
-  composites: ICatalogable[];
+  composites: Catalogable[];
 
-  constructor(name: string, composites: ICatalogable[] = []) {
+  constructor(name: string, composites: Catalogable[] = []) {
     this.name = name;
     this.composites = composites;
   }
 
   get total(): number {
     return this.composites.reduce(
-      (total, nextItem: ICatalogable) => total + nextItem.total,
+      (total, nextItem: Catalogable) => total + nextItem.total,
       0,
     );
   }

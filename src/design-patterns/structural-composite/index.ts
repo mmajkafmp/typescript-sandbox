@@ -1,7 +1,7 @@
 import CatalogItem from './catalog-item';
 import CatalogGroup from './catalog-group';
 
-export const run = () => {
+function run() {
   console.log('\nDESIGN PATTERN - STRUCTURAL - COMPOSITE\n');
 
   const boots = new CatalogItem('Leather Boots', 79.99);
@@ -33,4 +33,6 @@ export const run = () => {
   catalog.print();
 
   console.log(`\nCatalog total: £${catalog.total}`);
-};
+}
+
+export default run;

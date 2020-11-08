@@ -1,5 +1,5 @@
-import Employee from './Employee';
-import Shopper from './Shopper';
+import Employee from './employee';
+import Shopper from './shopper';
 
 function userFactory(
   name: string,

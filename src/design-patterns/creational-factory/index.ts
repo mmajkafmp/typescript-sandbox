@@ -1,7 +1,7 @@
-import Employee from './Employee';
+import Employee from './employee';
 import userFactory from './user-factory';
 
-export const run = () => {
+function run() {
   var alex = userFactory('Alex Banks', 100);
   var eve = userFactory(
     'Eve Porcello',
@@ -14,4 +14,6 @@ export const run = () => {
 
   console.log(alex.toString());
   console.log(eve.toString());
-};
+}
+
+export default run;

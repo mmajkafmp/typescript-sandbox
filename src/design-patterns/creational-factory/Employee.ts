@@ -1,4 +1,4 @@
-import Shopper from './Shopper';
+import Shopper from './shopper';
 
 export default class Employee extends Shopper {
   employer: string;
