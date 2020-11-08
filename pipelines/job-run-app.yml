@@ -1,6 +1,8 @@
 jobs:
 - job: RunAppMain
   displayName: Run App Main
+  workspace:
+    clean: all
 
   steps:
   - template: step-install-node.yml
