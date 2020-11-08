@@ -13,7 +13,7 @@ const goldNeclace = new GoldInventoryItem(neclace);
 const diamondGoldNeclace = new DiamondInventoryItem(goldNeclace);
 const diamondWalkman = new DiamondInventoryItem(walkman);
 
-function run() {
+function runDecorator() {
   console.log('\nDESIGN PATTERN - STRUCTURAL - DECORATOR\n');
 
   alex.purchase(neclace);
@@ -29,4 +29,4 @@ function run() {
   alex.printStatus();
 }
 
-export default run;
+export default runDecorator;

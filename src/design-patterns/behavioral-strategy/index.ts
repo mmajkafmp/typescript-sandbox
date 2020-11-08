@@ -2,7 +2,7 @@ import LogStrategyType from './log-strategy-type';
 import logger from './logger';
 import singletonLoggerTest from './logger';
 
-function run() {
+function runStrategy() {
   console.log('\nDESIGN PATTERN - BEHAVIORAL - STRATEGY\n');
 
   console.log(`Logger version: ${logger.currentVersion}`);
@@ -21,4 +21,4 @@ function run() {
   logger.log('Hello 6');
 }
 
-export default run;
+export default runStrategy;

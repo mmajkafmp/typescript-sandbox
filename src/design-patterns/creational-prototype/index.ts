@@ -1,6 +1,6 @@
 import scoutPrototype from './scout-prototype';
 
-function run() {
+function runPrototype() {
   console.log('\nDESIGN PATTERN - CREATIONAL - PROTOTYPE\n');
 
   const alex = scoutPrototype.clone();
@@ -15,4 +15,4 @@ function run() {
   console.log(`${eve.name}: ${eve.shoppingList}`);
 }
 
-export default run;
+export default runPrototype;

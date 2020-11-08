@@ -7,11 +7,21 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "No args",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}\\dist\\index.js",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "With args",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\dist\\index.js",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "args": ["list"]
     }
   ]
 }

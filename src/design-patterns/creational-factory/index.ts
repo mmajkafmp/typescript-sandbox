@@ -1,7 +1,7 @@
 import Employee from './employee';
 import userFactory from './user-factory';
 
-function run() {
+function runFactory() {
   console.log('\nDESIGN PATTERN - CREATIONAL - FACTORY\n');
 
   var alex = userFactory('Alex Banks', 100);
@@ -18,4 +18,4 @@ function run() {
   console.log(eve.toString());
 }
 
-export default run;
+export default runFactory;
