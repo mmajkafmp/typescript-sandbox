@@ -1,4 +1,4 @@
-import Person from './person';
+import Person from './z-person';
 
 export default class Shopper extends Person {
   money: number;

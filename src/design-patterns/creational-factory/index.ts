@@ -1,4 +1,4 @@
-import Employee from './employee';
+import Employee from './z-employee';
 import userFactory from './user-factory';
 
 function run() {
