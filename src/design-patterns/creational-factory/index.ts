@@ -2,6 +2,8 @@ import Employee from './employee';
 import userFactory from './user-factory';
 
 function run() {
+  console.log('\nDESIGN PATTERN - CREATIONAL - FACTORY\n');
+
   var alex = userFactory('Alex Banks', 100);
   var eve = userFactory(
     'Eve Porcello',
