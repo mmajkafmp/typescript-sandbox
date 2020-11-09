@@ -1,12 +1,6 @@
 import path from 'path';
 import { appendFile } from 'fs';
-
-export enum LogStrategyType {
-  NoDate = 0,
-  ToFile,
-  ToConsole,
-  None,
-}
+import LogStrategyType from './log-strategy-type';
 
 export default class LogStrategy {
   static getStrategyByType(strategyType: LogStrategyType) {

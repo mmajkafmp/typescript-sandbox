@@ -1,22 +1,45 @@
-import { Car } from './vehicle-service/vehicles';
-import { TodoService } from './todo-service/todo-service';
-import { run as runStrategy } from './design-patterns/strategy/index';
-import { run as runComposite } from './design-patterns/composite/index';
+import runPrototype from './design-patterns/creational-prototype';
+import runFactory from './design-patterns/creational-factory';
+import runBuilder from './design-patterns/creational-builder';
+import runDecorator from './design-patterns/structural-decorator';
+import runComposite from './design-patterns/structural-composite';
+import runChainOfResponsibility from './design-patterns/behavioral-chain-of-responsibility';
+import runStrategy from './design-patterns/behavioral-strategy';
 
-runStrategy();
+const designPatters = [
+  runPrototype,
+  runFactory,
+  runBuilder,
+  runDecorator,
+  runComposite,
+  runChainOfResponsibility,
+  runStrategy,
+];
 
-runComposite();
+const argv = process.argv.splice(2)[0];
 
-// const car = new Car();
+if (argv) {
+  const argvLowerCase = argv.toLocaleLowerCase();
 
-// car.drive();
+  if (argvLowerCase === 'list') {
+    console.log('\nAVAILABLE DESIGN PATTERNS\n');
 
-// const todoService = new TodoService();
+    designPatters.forEach((dp) =>
+      console.log(`* ${dp.name.replace('run', '')}`),
+    );
+    process.exit(0);
+  }
 
-// todoService.add(todoService.create('TODO 1'));
-// todoService.add(todoService.create('TODO 2'));
-// todoService.add(todoService.create('TODO 3'));
+  const wantedPatternDelegate = designPatters.find((dp) => {
+    const funcName = dp.name.toLocaleLowerCase();
 
-// const allTodos = todoService.getAll();
+    return funcName.includes(argvLowerCase);
+  });
 
-// console.log(`${allTodos.map((t) => t.name).join(', ')}`);
+  if (wantedPatternDelegate) {
+    wantedPatternDelegate();
+    process.exit(0);
+  }
+}
+
+designPatters.forEach((dp) => dp());
