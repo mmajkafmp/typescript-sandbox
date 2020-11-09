@@ -1,6 +1,8 @@
 import localStorageAdapter from './local-storage-adapter';
 
 function runAdapter() {
+  console.log('\nDESIGN PATTERN - CREATIONAL - ADAPTER\n');
+
   console.log('localStorage length: ', localStorageAdapter.length);
 
   var uid = localStorageAdapter.getItem('user_id');
