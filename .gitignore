@@ -108,3 +108,6 @@ junit.xml
 
 # Logs
 logs.txt
+
+# Temporary files
+*-tmp.*

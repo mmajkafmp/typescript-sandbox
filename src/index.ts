@@ -1,8 +1,9 @@
 import runPrototype from './design-patterns/creational-prototype';
 import runFactory from './design-patterns/creational-factory';
 import runBuilder from './design-patterns/creational-builder';
-import runDecorator from './design-patterns/structural-decorator';
+import runAdapter from './design-patterns/structural-adapter';
 import runComposite from './design-patterns/structural-composite';
+import runDecorator from './design-patterns/structural-decorator';
 import runChainOfResponsibility from './design-patterns/behavioral-chain-of-responsibility';
 import runStrategy from './design-patterns/behavioral-strategy';
 
@@ -10,8 +11,9 @@ const designPatters = [
   runPrototype,
   runFactory,
   runBuilder,
-  runDecorator,
+  runAdapter,
   runComposite,
+  runDecorator,
   runChainOfResponsibility,
   runStrategy,
 ];

@@ -19,6 +19,12 @@ function runStrategy() {
   logger.log('Hello 4');
   logger.log('Hello 5');
   logger.log('Hello 6');
+
+  logger.changeStrategy(LogStrategyType.ToFile);
+
+  logger.log('Hello 7');
+  logger.log('Hello 8');
+  logger.log('Hello 9');
 }
 
 export default runStrategy;
