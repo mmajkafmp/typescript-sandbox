@@ -24,7 +24,7 @@ class ExitCommand implements Command {
 class CreateCommand implements Command {
   fileName: string;
   body: string;
-  fullPath: any;
+  fullPath: string;
 
   constructor(fileName: string, text: string) {
     this.fileName = fileName;

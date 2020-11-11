@@ -4,7 +4,7 @@ import path from 'path';
 const STORAGE_FILE_PATH = path.join(process.cwd(), 'local-store-tmp.json');
 
 class LocalStorage {
-  items: any;
+  items: any; // TODO: can be an object but treated as an array?
 
   constructor() {
     if (existsSync(STORAGE_FILE_PATH)) {
