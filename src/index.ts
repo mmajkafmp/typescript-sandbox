@@ -7,6 +7,7 @@ import runComposite from './design-patterns/structural-composite';
 import runDecorator from './design-patterns/structural-decorator';
 import runChainOfResponsibility from './design-patterns/behavioral-chain-of-responsibility';
 import runCommand from './design-patterns/behavioral-command';
+import runIterator from './design-patterns/behavioral-iterator';
 import runObserver from './design-patterns/behavioral-observer';
 import runStrategy from './design-patterns/behavioral-strategy';
 
@@ -20,6 +21,7 @@ const designPatters = [
   runDecorator,
   runChainOfResponsibility,
   runCommand,
+  runIterator,
   runObserver,
   runStrategy,
 ];

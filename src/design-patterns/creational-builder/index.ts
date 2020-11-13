@@ -1,6 +1,6 @@
 import PersonBuilder from './person-builder';
 
-function runBuilder() {
+export default function runBuilder() {
   console.log('\nDESIGN PATTERN - CREATIONAL - BUILDER\n');
 
   const sue = new PersonBuilder('Sue').makeEmployee().makeManager(60).build();
@@ -21,5 +21,3 @@ function runBuilder() {
   console.log(charles.toString());
   console.log(tabbitha.toString());
 }
-
-export default runBuilder;

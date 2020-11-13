@@ -1,7 +1,7 @@
 import CatalogItem from './catalog-item';
 import CatalogGroup from './catalog-group';
 
-function runComposite() {
+export default function runComposite() {
   console.log('\nDESIGN PATTERN - STRUCTURAL - COMPOSITE\n');
 
   const boots = new CatalogItem('Leather Boots', 79.99);
@@ -34,5 +34,3 @@ function runComposite() {
 
   console.log(`\nCatalog total: £${catalog.total}`);
 }
-
-export default runComposite;

@@ -2,7 +2,7 @@ import Store from './store';
 import Shopper from './shopper';
 import Mall from './mall';
 
-function runObserver() {
+export default function runObserver() {
   console.log('\nDESIGN PATTERN - BEHAVIORAL - OBSERVER\n');
 
   const catsAndThings = new Store('Cats & Things');
@@ -28,5 +28,3 @@ function runObserver() {
 
   console.log(valleyMall.sales);
 }
-
-export default runObserver;

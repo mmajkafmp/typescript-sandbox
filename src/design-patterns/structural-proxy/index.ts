@@ -2,7 +2,7 @@ import path from 'path';
 import nodeFs from 'fs';
 import FilesystemProxy from './fs-proxy';
 
-function runProxy() {
+export default function runProxy() {
   console.log('\nDESIGN PATTERN - CREATIONAL - PROXY\n');
 
   const fs = new FilesystemProxy(nodeFs);
@@ -23,5 +23,3 @@ function runProxy() {
     console.error(error.message);
   }
 }
-
-export default runProxy;
