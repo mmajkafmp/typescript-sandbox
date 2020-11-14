@@ -23,6 +23,22 @@ Type `npm test` to run Jest unit tests.
 The classic [Gang of Four](https://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612)
  design patters are the basis for the JavaScript/TypeScript design patterns in this solution.
 
+* Creational
+  * [Singleton](src/design-patterns/behavioral-strategy/SINGLETON.md)
+  * [Protoype](src/design-patterns/creational-prototype/README.md)
+  * [Factory](src/design-patterns/creational-factory/README.md)
+  * [Builder](src/design-patterns/creational-builder/README.md)
+* Structural
+  * [Adapter](src/design-patterns/structural-adapter/README.md)
+  * [Proxy](src/design-patterns/structural-proxy/README.md)
+  * [Composite](src/design-patterns/structural-composite/README.md)
+  * [Decorator](src/design-patterns/structural-decorator/README.md)
+* Behavioral
+  * [Chain of Responsibility](src/design-patterns/behavioral-chain-of-responsibility/README.md)
+  * [Command](src/design-patterns/behavioral-command/README.md)
+  * [Iterator](src/design-patterns/behavioral-iterator/README.md)
+  * [Observer](src/design-patterns/behavioral-observer/README.md)
+
 Tutorials and recommended reading used:
 
 * [Node.js Design Patterns](https://www.linkedin.com/learning/node-js-design-patterns/)
