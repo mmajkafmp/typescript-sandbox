@@ -1,0 +1,30 @@
+import Store from './store';
+import Shopper from './shopper';
+import Mall from './mall';
+
+export default function runObserver() {
+  console.log('\nDESIGN PATTERN - BEHAVIORAL - OBSERVER\n');
+
+  const catsAndThings = new Store('Cats & Things');
+  const insAndOuts = new Store('Ins and Outs');
+
+  const alex = new Shopper('Alex');
+  const eve = new Shopper('Eve');
+  const sharon = new Shopper('Sharon');
+  const mike = new Shopper('Mike');
+
+  const valleyMall = new Mall();
+
+  catsAndThings.subscribe(alex);
+  catsAndThings.subscribe(eve);
+  catsAndThings.subscribe(mike);
+  catsAndThings.subscribe(valleyMall);
+
+  insAndOuts.subscribe(sharon);
+  insAndOuts.subscribe(valleyMall);
+
+  catsAndThings.sale(20);
+  insAndOuts.sale(50);
+
+  console.log(valleyMall.sales);
+}

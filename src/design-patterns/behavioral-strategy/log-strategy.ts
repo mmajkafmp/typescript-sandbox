@@ -1,5 +1,5 @@
 import path from 'path';
-import { appendFile } from 'fs';
+import { appendFileSync } from 'fs';
 import LogStrategyType from './log-strategy-type';
 
 export default class LogStrategy {
@@ -19,14 +19,14 @@ export default class LogStrategy {
   }
 
   static toFile(timestamp: string, message: string) {
-    const filePath = path.join(__dirname, 'logs.txt');
+    const filePath = path.join(process.cwd(), 'strategic-logs-tmp.log');
 
-    appendFile(filePath, `${timestamp} - ${message}\n`, (error) => {
-      if (error) {
-        console.log(`Error writing to ${filePath} file`);
-        console.error(error);
-      }
-    });
+    try {
+      appendFileSync(filePath, `${timestamp} - ${message}\n`);
+    } catch (error) {
+      console.log(`Error writing to ${filePath} file`);
+      console.error(error);
+    }
   }
 
   static toConsole(timestamp: string, message: string) {
