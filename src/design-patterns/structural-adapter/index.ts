@@ -1,7 +1,9 @@
-import localStorageAdapter from './local-storage-adapter';
+import LocalStorageAdapter from './local-storage-adapter';
 
 export default function runAdapter() {
   console.log('\nDESIGN PATTERN - CREATIONAL - ADAPTER\n');
+
+  const localStorageAdapter = new LocalStorageAdapter();
 
   console.log('localStorage length: ', localStorageAdapter.length);
 
