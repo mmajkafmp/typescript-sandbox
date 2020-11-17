@@ -3,7 +3,7 @@ import Iterator from './iterator';
 
 export default function runIterator() {
   console.log('\nDESIGN PATTERN - BEHAVIORAL - ITERATOR\n');
-  var inventory = new Iterator([
+  const inventory = new Iterator([
     new InventoryItem('Poles', 9.99),
     new InventoryItem('Skis', 799.99),
     new InventoryItem('Boots', 799.99),

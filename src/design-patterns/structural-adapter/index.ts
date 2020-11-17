@@ -7,7 +7,7 @@ export default function runAdapter() {
 
   console.log('localStorage length: ', localStorageAdapter.length);
 
-  var uid = localStorageAdapter.getItem('user_id');
+  const uid = localStorageAdapter.getItem('user_id');
 
   console.log('user_id: ', uid);
 

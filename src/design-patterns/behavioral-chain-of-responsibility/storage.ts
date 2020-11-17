@@ -15,7 +15,7 @@ export default class Storage {
   }
 
   lookInLocalInventory(itemName: string) {
-    var index = this.inventory.map((item) => item.name).indexOf(itemName);
+    const index = this.inventory.map((item) => item.name).indexOf(itemName);
 
     return this.inventory[index];
   }
@@ -25,7 +25,7 @@ export default class Storage {
   }
 
   find(itemName: string): SearchResult | string {
-    var found = this.lookInLocalInventory(itemName);
+    const found = this.lookInLocalInventory(itemName);
     if (found) {
       return {
         name: found.name,
