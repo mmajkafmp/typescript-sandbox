@@ -1,5 +1,5 @@
-var { writeFileSync, unlinkSync } = require('fs');
-var path = require('path');
+const { writeFileSync, unlinkSync } = require('fs');
+const path = require('path');
 
 interface Command {
   name: string;

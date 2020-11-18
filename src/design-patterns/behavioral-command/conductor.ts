@@ -20,14 +20,14 @@ class Conductor {
   }
 
   undo() {
-    var command = this.history.pop() as Command;
+    const command = this.history.pop() as Command;
     console.log(`undo ${command.name}`);
     command.undo();
     this.undone.push(command);
   }
 
   redo() {
-    var command = this.undone.pop() as Command;
+    const command = this.undone.pop() as Command;
     console.log(`redo ${command.name}`);
     command.execute();
     this.history.push(command);

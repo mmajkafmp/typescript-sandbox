@@ -10,12 +10,12 @@ export default class Iterator {
   }
 
   first() {
-    var [first] = this.items;
+    const [first] = this.items;
     return first;
   }
 
   last() {
-    var [last] = [...this.items].reverse();
+    const [last] = [...this.items].reverse();
     return last;
   }
 

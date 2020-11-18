@@ -6,8 +6,8 @@ const skiShop = new Store('Steep and Deep', inventory);
 export default function runChainOfResponsibility() {
   console.log('\nDESIGN PATTERN - BEHAVIORAL - CHAIN OF RESPONSIBILITY\n');
 
-  var searchItem = 'powder skis';
-  var results = skiShop.find(searchItem);
+  const searchItem = 'powder skis';
+  const results = skiShop.find(searchItem);
 
   console.log(results);
 }
