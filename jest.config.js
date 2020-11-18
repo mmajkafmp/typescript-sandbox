@@ -6,4 +6,5 @@ module.exports = {
   coverageReporters: ['cobertura', 'text', 'lcov', 'clover'],
   reporters: ['default', 'jest-junit'],
   testEnvironment: 'node',
+  testRegex: '.*\\.test\\.ts$',
 };
